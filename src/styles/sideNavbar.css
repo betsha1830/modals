@@ -2,13 +2,30 @@
   height: 100%;
   position: fixed;
   top: 0;
-  width: 300px;
+  width: 307px;
   background-color: white;
+  box-shadow: -2px 0 10px rgba(0,0,0, 0.2);
+  font-size: 1.4em;
+}
+
+.open-btn {
+  width: 30px;
+  height: 30px;
+}
+
+.close-btn {
+  width: 20px;
+  height: 20px;
 }
 
 .side-navbar ul{
+  margin-top: 5vh;
   list-style-type: none;
-  font-family: 'Courier New', Courier, monospace;
+}
+
+.side-navbar li {
+  width: 200px;
+  margin-top: 2vh;
 }
 
 .nav {
@@ -29,6 +46,8 @@
   width: 300px;
 }
 
-.close-btn {
-  float: right;
+.close-btn-pos {
+  position: absolute;
+  right: 2vw;
+  top: 2vh;
 }
