@@ -1,0 +1,34 @@
+.side-navbar {
+  height: 100%;
+  position: fixed;
+  top: 0;
+  width: 300px;
+  background-color: white;
+}
+
+.side-navbar ul{
+  list-style-type: none;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-end;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.close-btn {
+  float: right;
+}
