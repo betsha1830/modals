@@ -2,6 +2,7 @@ import {AnimatePresence, motion} from 'framer-motion'
 import { useState } from 'react';
 import HamburgerMenu from '../assets/hamburger-menu.png'
 import x from '../assets/x.png'
+import '../styles/sideNavbar.css'
 
 function SideNavbar () {
 
@@ -11,7 +12,7 @@ function SideNavbar () {
 
     <div className='nav'>
       <div className='nav-container'>
-        <motion.div whileHover={{cursor: "pointer"}} onClick={() => setClicked(!clicked)} className='btn-container'><img className='open-btn' src={HamburgerMenu}/></motion.div>
+        <div className='btn-container'><motion.img whileHover={{cursor: "pointer"}} onClick={() => setClicked(!clicked)} className='open-btn' src={HamburgerMenu}/></div>        
         <AnimatePresence>
         {(clicked && 
 
