@@ -11,7 +11,7 @@ function DropIn () {
     <>
     <motion.button 
       onClick={() => setDropIn(!dropIn)} 
-      whileHover={{scale: 1.2, boxShadow: '0 0 10px rgba(89, 255, 0, 0.5)'}} 
+      whileHover={{scale: 1.2, cursor: "pointer", boxShadow: '0 0 10px rgba(89, 255, 0, 0.5)'}} 
       className='dropin-btn'>Make it Drop!</motion.button>
     <AnimatePresence>
     {dropIn && <motion.div className='dropin'>
@@ -19,6 +19,7 @@ function DropIn () {
         onClick={() => setDropIn(!dropIn)}
         className='backdrop'>
           <motion.div 
+          onClick={(e) => e.stopPropagation()}
           initial={{y: '-100vh'}}
           animate={{y: 0}}
           exit={{y: '100vh'}}
@@ -27,7 +28,7 @@ function DropIn () {
             <motion.button
             className='dropin-btn'
             onClick={() => setDropIn(!dropIn)}
-              whileHover={{scale: 1.2}}
+              whileHover={{scale: 1.2, cursor: "pointer"}}
               >
                 Go Back Home</motion.button>
           </motion.div>

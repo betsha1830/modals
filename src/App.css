@@ -1,3 +1,7 @@
+.container {
+  margin: 0 2% 0 2%;
+}
+
 /* Backdrop in styling -- START */
 
 .backdrop {
@@ -22,6 +26,7 @@
   background-color: transparent;
   border: 1px #59FF00 solid;
   border-radius: 15px;
+  font-family: 'Ysabeau', sans-serif;
 }
 
 .dropin-container {
@@ -54,4 +59,84 @@
   font-size: 30px;
 }
 
-/* Drop in styling -- END */
+/* ---------- Drop in styling -- END ---------- */
+
+/* Fade in styling -- BEGIN */
+
+.small-elt {
+  width: 22vw;
+  border: 1px solid rgba(226, 226, 226);
+  padding-bottom: 4vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item-container {
+  width: 90%;
+}
+
+.small-img {
+  width: 22vw;
+}
+
+.item-name {
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.item-price {
+  text-align: end;
+}
+
+.content {
+  width: 80vw;
+  height: auto;
+  background-color: white;
+  padding: 0 5% 0 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.large-img {
+  width: 30vw;
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+
+.image-side {
+  display: flex;
+  align-items: center;
+}
+
+.left-btn, .right-btn {
+  width: 2vw;
+  color: rgb(180, 180, 180);
+}
+
+.description-side {
+  width: 45%;
+  margin: 5% 0 5% 0;
+}
+
+@media screen and (max-width: 900px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 0 0;
+  }
+
+  .image-side {
+    padding-top: 5vh
+  }
+  .large-img {
+    width: 45vw;
+  }
+
+  .description-side {
+    width: 90%;
+  }
+}
+
+/* ---------- Fade in styling -- END ---------- */

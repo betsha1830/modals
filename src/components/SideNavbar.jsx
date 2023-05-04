@@ -1,7 +1,7 @@
 import {AnimatePresence, motion} from 'framer-motion'
 import { useState } from 'react';
-import HamburgerMenu from '../assets/hamburger-menu.png'
-import x from '../assets/x.png'
+import HamburgerMenu from '../assets/icons/hamburger-menu.png'
+import x from '../assets/icons/x.png'
 import '../styles/sideNavbar.css'
 
 function SideNavbar () {
